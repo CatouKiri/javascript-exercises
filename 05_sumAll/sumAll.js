@@ -1,13 +1,20 @@
 const sumAll = function() {
-let min = arguments[0];
-let max = arguments[1];
-let a = min;
-while(min < max){
-    a = a + (min + 1);
-    min++;
+    let mintype = typeof(arguments[0]);
+    let maxtype = typeof(arguments[1]);
+    let min = Math.min(...arguments);
+    let max = Math.max(...arguments);
+    let sum = min;
+    if(min > 0 && max > 0 && maxtype === 'number' && mintype === 'number'){
+        while(min < max){
+            sum += (min + 1);
+            min++;
+        }
+        return sum;
+    }
+    else{
+        return 'ERROR';
+    }
 }
-return a;
-};
 
 // Do not edit below this line
 module.exports = sumAll;
