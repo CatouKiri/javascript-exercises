@@ -1,26 +1,4 @@
 const findTheOldest = function(people) {
-    // let currentOldest = 0;
-    // let a = -1;
-    // for(let i = 0; i < people.length; i++){
-    //     let death = people[i].yearOfDeath;
-    //     let birth = people[i].yearOfBirth;
-    //     if(people[i].yearOfDeath === undefined){
-    //         const d = new Date();
-    //         death = d.getFullYear();
-    //     }
-    //     let currentAge = death - birth;
-    //     if(currentOldest < currentAge){
-    //         currentOldest = currentAge;
-    //     }
-    //     else{
-    //         a++;
-    //     }
-
-    // }
-    // return people[a];
-
-
-    // declare c = 0 for array item oldest
     let c = 0;
     for(let i = 0; i < people.length-1; i++){
         // declare death
